@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				background-color: #eee;
+			}
+			.wrap{
+				font-size:14px;
+			}
+			.catalist{
+				float : left;
+				width: 200px;
+			}
+			.catalist ul li a{
+				text-decoration: none;
+				color:#000;
+				font-size:20px;
+				line-height: 40px;
+				display:inline-block;
+				
+			}
+			.catalist ul li a:hover{
+				color:#670066;
+				text-decoration: underline;
+			}
+			.catalist ul li{
+				list-style:square;
+				
+			}
+			.content{
+				margin-left: 200px;
+			}
+			.content ul{
+				display:flex;
+				flex-wrap: wrap;
+				border:1px solid #ccc;
+				justify-content: center;
+				align-items: center;
+			}
+			.content ul li{
+				height:600px;
+				list-style:none;
+				flex: 1;
+				flex-basis:33%;
+				text-align: center;
+				margin-bottom:10px;
+			}
+			.content ul li:hover{
+				border:1px solid #666;
+				box-shadow: 2px 5px 5px #666;
+			}
+			.content ul li:hover img{
+				transform: rotateY(360deg);
+				transition: all 3s;
+			}
+			.content ul li #zi{
+				height:20px;
+				width:430px;
+				font-size:14px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app"></div>
+		<script src="/jquery.min.js"></script>
+		<script src="/app.build.js"></script>	
+	</body>
+</html>
